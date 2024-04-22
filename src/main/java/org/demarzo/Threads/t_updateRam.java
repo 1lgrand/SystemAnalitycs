@@ -18,15 +18,17 @@ public class t_updateRam extends Thread{
     @FXML
     Label fractionRAM;
 
+    SystemInfo si = new SystemInfo();
+    HardwareAbstractionLayer hardware = si.getHardware();
+    GlobalMemory globalMemory = hardware.getMemory();
+    Long totalMemory = globalMemory.getTotal();
+
     public t_updateRam(Label ramLabel,Label fractionRAM){
         this.ram = ramLabel;
         this.fractionRAM = fractionRAM;
     }
 
-    SystemInfo si = new SystemInfo();
-    HardwareAbstractionLayer hardware = si.getHardware();
-    GlobalMemory globalMemory = hardware.getMemory();
-    Long totalMemory = globalMemory.getTotal();
+
 
     private String calculatePercOfRAM(){
 
@@ -55,11 +57,8 @@ public class t_updateRam extends Thread{
     @Override
     public void run() {
 
-
-
-
         while (true){
-            System.out.println(hardware.getProcessor().getSystemCpuLoad(700)*100);
+
             try {
 
                 Platform.runLater(()->{
