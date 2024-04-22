@@ -39,6 +39,7 @@ public class hpController implements Initializable{
         t_updateCpu = new t_updateCpu(perc_cpu_label);
         t_updateMemory = new t_updateMemory(freeSpaceLabel,freeSpaceProgressBar);
 
+        
         t_updateMemory.start();
         t_updateCpu.start();
         t_updateRam.start();
