@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Mp';
+    src: url('../fonts/metropolis-regular.otf');
+}
+
+@font-face {
+    font-family: 'Mp-b';
+    src: url('../fonts/metropolis-bold.otf');
+}
+
+@font-face {
+    font-family: 'Mp-t';
+    src: url('../fonts/metropolis-thin.otf');
+}
+
+.welcomeLabel{
+    -fx-font-family: "Mp";
+    -fx-font-size: 40px;
+}
+
+.label{
+    -fx-font-family: "Mp-b";
+}
+
+.paneForm{
+     -fx-background-color: linear-gradient(to bottom right,#2e2e2e, #212121);
+     -fx-background-radius:10;
+     -fx-effect: dropshadow(one-pass-box, #ffffff, 10, 0.5, 0, 0.5)
+}
+
+.loginBtn {
+    -fx-background-color: #71EFA3;
+    -fx-background-radius: 20;
+    -fx-font-family: "Mp-b";
+    -fx-font-size: 20px;
+}
+
+.loginBtn:hover {
+    -fx-background-color: #65C18C;
+    -fx-font-size: 20px;
+    transition: -fx-background-color 0.5s ease;
+    -fx-cursor: hand;
+}
+
+.loginBtn:pressed {
+    -fx-background-color: #50CB93; /* maybe some other color */
+    -fx-cursor: hand;
+}
+
+.inputField{
+    -fx-font-family: "Mp-t";
+    -fx-font-size: 20px;
+    -fx-background-color: #bebebe;
+
+}
+
+.inputField:active{
+    -fx-font-family: "Mp-t";
+    -fx-font-size: 20px;
+}
+
+.ospiteButton{
+    -fx-background-color: #edede9;
+    -fx-background-radius: 20;
+    -fx-font-family: "Mp-b";
+    -fx-font-size: 12px;
+}
+
+.ospiteButton:hover{
+    -fx-background-color: #d8e2dc;
+    -fx-background-radius: 20;
+    -fx-font-family: "Mp-b";
+    -fx-font-size: 12px;
+}
+
+.ospiteButton:pressed{
+    -fx-background-color: #c0c0c0;
+    -fx-background-radius: 20;
+    -fx-font-family: "Mp-b";
+    -fx-font-size: 12px;
+}
+

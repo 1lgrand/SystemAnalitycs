@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="610.0" prefWidth="930.0" style="-fx-background-color: linear-gradient(to bottom right,#222222, #191717);" styleClass="inputField" stylesheets="@../styles/login.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.demarzo.Controllers.loginController">
+   <children>
+      <Label alignment="CENTER" layoutX="339.0" layoutY="43.0" prefHeight="63.0" prefWidth="253.0" styleClass="welcomeLabel" stylesheets="@../styles/login.css" text="BENVENUTO" textFill="WHITE">
+         <font>
+            <Font name="Arial Nova" size="38.0" />
+         </font>
+      </Label>
+      <Pane layoutX="274.0" layoutY="140.0" prefHeight="388.0" prefWidth="383.0" styleClass="paneForm" stylesheets="@../styles/login.css">
+         <children>
+            <Label alignment="CENTER" layoutX="32.0" layoutY="41.0" stylesheets="@../styles/login.css" text="Username:" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="35.0" layoutY="152.0" stylesheets="@../styles/login.css" text="Password:" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField alignment="TOP_LEFT" layoutX="34.0" layoutY="79.0" prefHeight="25.0" prefWidth="307.0" styleClass="inputField" stylesheets="@../styles/login.css">
+               <font>
+                  <Font size="18.0" />
+               </font></TextField>
+            <Button alignment="CENTER" layoutX="124.0" layoutY="258.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="198.0" style="-fx-pref-width: 130; -fx-pref-height: 30;" styleClass="loginBtn" stylesheets="@../styles/login.css" text="Login">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+            <PasswordField layoutX="35.0" layoutY="194.0" prefHeight="25.0" prefWidth="307.0" styleClass="inputField" stylesheets="@../styles/login.css">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <Button layoutX="124.0" layoutY="315.0" mnemonicParsing="false" onMouseClicked="#accediOspite" prefHeight="21.0" prefWidth="130.0" styleClass="ospiteButton" text="Accedi come ospite">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</Pane>

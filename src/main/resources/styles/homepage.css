@@ -1,0 +1,29 @@
+
+@font-face {
+    font-family: 'Mp-t';
+    src: url('../fonts/metropolis-thin.otf');
+}
+
+@font-face{
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.otf');
+}
+
+.pane{
+    -fx-background-color: linear-gradient(to bottom right,#2e2e2e, #212121);
+}
+
+.infoPane{
+    -fx-background-color: linear-gradient(to bottom right,#333737, #4b4848);
+    -fx-background-radius: 8px;
+}
+
+.componentLabel{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 24px;
+}
+
+.percentualeLabel{
+    -fx-font-size: 35px;
+    -fx-color: white;
+}
